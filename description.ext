@@ -1,0 +1,59 @@
+/* 
+* Paramètres de configuration de la mission. Tout ce qui est paramétrable
+* pour le créateur de la mission se trouve ici.
+*/
+
+//Le nom de l'objet utilisé pour les commandes des GM (dans Eden : variable name ) (utilisé dans initPlayerLocal.sqf).
+objCmdGm = "cmdGM";
+
+//Le nom du joueur GM, qui est également le "owner" du module Zeus Game Master si celui-ci est utilisé (utilisé dans initPlayerLocal.sqf).
+objGm = "gm";
+
+//Idem pour le GM assistant (utilisé dans initPlayerLocal.sqf).
+objGmA = "gm_a";
+
+//Les GM peuvent se téléporter. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+gmTeleporte = 1;
+
+//les GM voient les unités sur la carte. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+gmVoitUnites = 1;
+
+//Les GM peuvent participer à la course. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+gmParticipe = 1;
+
+//Le nom de la classe de l'objet utilisé pour les balises (utilisé dans initPlayerLocal.sqf).
+clsBalise = "FlagSmall_F";
+
+//Ajoute automatiquement des marqueurs pour les balises sur la carte. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+markerBalisesAuto = 1;
+
+//Masquer les positions (tasks) des balises sur la carte. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+masquePosBalises = 1;
+
+//Le classname de l'entité utilisée pour les cibles (utilisé dans initServer.sqf et initPlayerLocal.sqf).
+clsCible = "Land_Target_Oval_F";
+
+//La cible est une IA. 0 : non / 1 : oui (utilisé dans initServer.sqf et initPlayerLocal.sqf).
+clsCibleIA = 0;
+
+//Le préfixe des noms des triggers utilisés pour délimiter les positions de tir (utilisé dans initServer.sqf).
+strPatTrg = "posTir";
+
+//Ajoute automatiquement des marqueurs pour les positions de tir. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
+markerPosTirAuto = 1;
+
+//nombre de cartouches chargées dans l'arme de chaque joueur (utilisé dans initPlayerLocal.sqf).
+numCartouches = 20;
+
+//Pénalité pour tir interdit, exprimée en secondes (utilisé dans initServer.sqf).
+numPenalTirInterdit = 180;
+
+//Pénalité pour cible manquée, exprimée en secondes (utilisé dans initServer.sqf).
+numPenalCibleManquee = 30;
+
+
+
+author = "tanin69";
+OnLoadName = "Parcours Loukas (Altis)";
+OnLoadMission = "La course d'orientation : la tête et les jambes !";
+

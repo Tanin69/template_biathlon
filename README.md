@@ -1,2 +1,2 @@
 # template_biathlon
-An Arma 3 *bialthlon* mission template 
+An Arma 3 *biathlon* mission template 

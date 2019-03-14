@@ -18,10 +18,10 @@ Les variables sont documentées dans le description.ext
 	private _clsCible          = getMissionConfigValue "clsCible";
 	private _clsCibleIA        = getMissionConfigValue "clsCibleIA";
 	private _nbCartouches      = getMissionConfigValue "numCartouches";
-	masquePosBalises           = getMissionConfigValue "masquePosBalises";
 	private _markerBalisesAuto = getMissionConfigValue "markerBalisesAuto";
 	private _markerPosTirAuto  = getMissionConfigValue "markerBalisesAuto";
-	
+	masquePosBalises           = getMissionConfigValue "masquePosBalises";
+	courseEnBoucle             = getMissionConfigValue "CourseEnBoucle";
 
 /*
 scripts excutés sur le client (joueur).
@@ -86,7 +86,7 @@ _initJoueur =
 	
 	//Initialisation des variables globales (sur le client)
 	tableauPassagesJoueur = [];
-	baliseDepart = nil;
+	//baliseDepart = nil;
 
 	//Tableau des balises à valider. Ce tableau est local pour tous les joueurs
 	tableauBalises = allMissionObjects (_clsBalise);

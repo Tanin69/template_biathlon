@@ -21,6 +21,9 @@ gmVoitUnites = 1;
 //Les GM peuvent participer à la course. 0 : option inactive / 1 : option active (utilisé dans initPlayerLocal.sqf).
 gmParticipe = 1;
 
+//Course en boucle. 0 : la validation de la dernière balise arrête le chrono / 1 : il faut valider à nouveau la première balise pour arrêter le chrono.
+courseEnBoucle = 0;
+
 //Le nom de la classe de l'objet utilisé pour les balises (utilisé dans initPlayerLocal.sqf).
 clsBalise = "FlagSmall_F";
 

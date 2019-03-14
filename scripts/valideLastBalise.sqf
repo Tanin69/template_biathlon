@@ -13,7 +13,7 @@ _balise removeAction 1;
 
 //Enregistre l'événement localement
 waitUntil {chronoServeur > 0};
-tableauPassagesJoueur pushBack [_balise,chronoServeur];
+tableauPassagesJoueur pushBack _balise;
 ["FinCourse", player, ["Dernière balise (" + str _balise + ") validée à " + (chronoServeur call BIS_fnc_timeToString), "Valider la dernière balise"],[], "SUCCEEDED", 0, true, false, "", false] call BIS_fnc_setTask;
 
 
